@@ -48,10 +48,9 @@
   },
   "homepage": "https://github.com/MBoone5/Static-Express-Site#readme",
   "devDependencies": {
-    "body-parser": "^1.18.3",
     "eslint": "^5.12.1",
     "express": "^4.16.4",
-    "path": "^0.12.7",
+    "nodemon": "^1.18.9",
     "pug": "^2.0.3"
   },
   "dependencies": {
