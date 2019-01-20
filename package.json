@@ -1,0 +1,60 @@
+{
+  "name": "static_node_and_express_site-v1",
+  "version": "1.0.0",
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "commonjs": true,
+      "es6": true,
+      "node": true
+    },
+    "extends": "eslint:recommended",
+    "parserOptions": {
+      "ecmaVersion": 6
+    },
+    "rules": {
+      "indent": [
+        "error",
+        2
+      ],
+      "linebreak-style": [
+        "error",
+        "unix"
+      ],
+      "quotes": [
+        "error",
+        "single"
+      ],
+      "semi": [
+        "error",
+        "always"
+      ]
+    }
+  },
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MBoone5/Static-Express-Site.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MBoone5/Static-Express-Site/issues"
+  },
+  "homepage": "https://github.com/MBoone5/Static-Express-Site#readme",
+  "devDependencies": {
+    "body-parser": "^1.18.3",
+    "eslint": "^5.12.1",
+    "express": "^4.16.4",
+    "path": "^0.12.7",
+    "pug": "^2.0.3"
+  },
+  "dependencies": {
+    "acorn": "^6.0.5"
+  }
+}

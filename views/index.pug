@@ -1,0 +1,26 @@
+extends layout.pug
+
+block content 
+  article.grid-container.portfolio-intro
+    div
+
+      //- Portfolio title
+      h1 Hello, My Name Is Moses Boone!
+
+      //- Portfolio Description
+      p.lead.text-light
+        | This portfolio serves as a bit of insight into the scope of my development knoweldge. I've been involved
+        | in the development of all the projects included, and this site itself as well!
+  article.grid-container.portfolio-index
+    
+    .grid-x.grid-margin-x.small-up-2.medium-up-2.large-up-3
+
+      //- Using the Pug `each` iterator to create a projet img, title and link in the markup for each project
+      each proj in projects
+        - let projId = `/projects/${proj.id}`
+        - let imgSrc = `${proj.image_urls}/main.png`
+        .cell
+          a(href=projId)
+            img.thumbnail(src=imgSrc)
+            h5 #{proj.project_name}
+      

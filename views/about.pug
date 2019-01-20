@@ -1,0 +1,58 @@
+extends layout.pug
+
+block content 
+  nav.grid-container.portfolio-breadcrumb
+    a(href='/') ← Back
+  article.grid-container.portfolio-intro.portfolio-project
+    .grid-x
+      .cell.small-6.medium-9.large-9
+
+        //- Name
+        h1 Moses Boone
+
+        //- Title
+        p.lead.text-light
+          | Full Stack JavaScript Developer
+
+        //- Pitch to employers 
+        .portfolio-bio  
+          p 
+            | Ever since I was a kid, I've had a fascination with programming. I would read books about Ruby and Perl before I ever had a computer to
+            | code with. That sense of wonder and curiosity never ceased, and to this day I'm constantly in search of new ways to expand and apply my knowledge. 
+            | As I've continued this pursuit of knowledge, I've developed a proficient skillset that is constanly undergoing growth and expansion. Another passion
+            | of mine is business and entrepeneurship; This creates a unqiue relationship between my business mindset, and programming skillset. I approach
+            | software as a way to provide a solution to a larger problem, and constantly try to analyze the integrity of the solution.
+      .cell.portfolio-meta.small-6.medium-2.large-3
+        //- Skills list
+        ul
+          h6 Professional Skills
+          li Excellent Communication
+          li Proficienct In Business
+          li Growth-Oriented Mindset 
+
+          br
+
+          h6 Software Skills
+          li JavaScript
+          li Python
+          li Node
+          li Express
+          li Data Analysis
+          li Basic Networking &#38; Infrastructure
+          li Working Knowledge of Cyber Security
+        
+        br
+
+        h6 Contact Info
+
+        //- contact info
+        ul
+          li 503-913-6204
+          li moses.s.boone@gmail.com
+
+        //- Social Media
+        a.button.expanded(href='') LinkedIn
+        a.button.expanded(href='') GitHub
+  nav.grid-container.portfolio-breadcrumb
+    a(href='/') ← Back
+  

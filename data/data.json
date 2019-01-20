@@ -1,0 +1,50 @@
+{
+    "projects": [
+        {
+            "id": "0",
+            "project_name": "Random Quote Generator",
+            "description": "A simple, but inspiring random quote generator",
+            "technologies": ["HTML", "CSS", "JavaScript"],
+            "live_link": "https://mboone5.github.io/Random-Quote-Generator/",
+            "github_link": "https://github.com/MBoone5/Random-Quote-Generator",
+            "image_urls": "/static/images/quote-generator"
+            
+        }, 
+        {
+            "id": "1",
+            "project_name": "Student Directory",
+            "description": "A student directory app that focuses on pagination and filtering elements.",
+            "technologies": ["HTML", "CSS", "JavaScript", "jQuery"],
+            "live_link": "https://mboone5.github.io/Pagination-Filtering-Javascript/",
+            "github_link": "https://github.com/MBoone5/Pagination-Filtering-Javascript",
+            "image_urls": "/static/images/list-pagi"
+        },
+        {
+            "id": "2",
+            "project_name": "Interactive Form",
+            "description": "An interactive form that imitates signing up to attend an event, featuring custom validation and errors, along with some fun animations.",
+            "technologies": ["HTML", "CSS", "JavaScript", "jQuery", "jQuery UI"],
+            "live_link": "https://mboone5.github.io/Interactive-Form/",
+            "github_link": "https://github.com/MBoone5/Interactive-Form",
+            "image_urls": "/static/images/int-form"
+        },
+        {
+            "id": "3",
+            "project_name": "Phrase Hunter",
+            "description": "A phrase guessing game built using Object-Oriented JavaScript principles.",
+            "technologies": ["HTML", "CSS","JavaScript"],
+            "live_link": "https://mboone5.github.io/OOJS-Game/",
+            "github_link": "https://github.com/MBoone5/OOJS-Game",
+            "image_urls": "/static/images/oo-game"
+        },
+        {
+            "id": "4",
+            "project_name": "Employee Directory",
+            "description": "A mock employee directory app that uses public API calls to generate employee data",
+            "technologies": ["HTML", "CSS","JavaScript", "jQuery"],
+            "live_link": "https://mboone5.github.io/Public-Api-Requests/",
+            "github_link": "https://github.com/MBoone5/Public-Api-Requests",
+            "image_urls": "/static/images/api-requests"
+        }
+    ]
+}

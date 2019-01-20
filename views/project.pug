@@ -1,0 +1,36 @@
+extends layout.pug
+
+block content 
+  nav.grid-container.portfolio-breadcrumb
+    a(href='/') ← Back
+  article.grid-container.portfolio-intro.portfolio-project
+    .grid-x
+      .cell.small-6.medium-9.large-9
+          //- Use interploation to dynamically add the project title.
+          h1 #{project.project_name}
+
+          //- Use interploation to dynamically add the project description.
+          p.lead.text-light
+            | #{project.description}
+
+      .cell.portfolio-meta.small-6.medium-2.large-3
+        h6 Technologies
+
+        //- Use an `each` iterator to replace the li tags below and interploation to dynamically add the technologies used in each project.
+        ul
+          each technology in project.technologies
+            li #{technology}
+
+      //- Use template literals and interpolation to add URLs to the hrefs below so they link to the repo and the live version of each project.
+      - let liveHref = project.live_link
+      - let repoHref = project.github_link
+      a.button.expanded(href=liveHref) Live Demo
+      a.button.expanded(href=repoHref) GitHub Repo
+    
+    //- Replace the URLs in the src attributes below with template literals and interpolation to dynamically add three project images.  You only have to add one image.  But adding more images to show your app in different states demonstrates a level of thoroughness and professionalism that potential emplyers will like to see.
+    - let imgA = `${project.image_urls}/imgA.png`
+    - let imgB = `${project.image_urls}/imgB.png`
+    - let imgC = `${project.image_urls}/imgC.png`
+    img.image(src=imgA)
+    img.image(src=imgB)
+    img.image(src=imgC)
