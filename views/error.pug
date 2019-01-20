@@ -6,11 +6,11 @@ block content
         .cell
           i.far.fa-question-circle
           hr
-          h1.error= message
+          h1.error= error.message
       .grid-x
         .cell.large-4
-          h2 Looks like this issue is a #{status}
+          h2 Looks like this issue is a #{error.status}
           i.far.fa-sad-tear
         .cell.large-8
           h2 This issue is found at:
-          p= stack
+          p= error.stack

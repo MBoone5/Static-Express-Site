@@ -1,6 +1,5 @@
 // imports
 const express = require('express');
-const url = require('url');
 
 // creating the app
 const app = express();
@@ -29,29 +28,16 @@ app.get('/projects/:id', (req, res) => {
   res.locals.project = projects.filter(proj => proj.id === req.params.id)[0];
   res.render('project');
 });
-// error route
-app.get('/error', (req, res) => {
-  res.locals.message = req.query.message;
-  res.locals.status = req.query.status;
-  res.locals.stack = req.query.stack;
-  res.render('error');
-});
-
 // ========= error handling ==============
 app.use((req, res, next) => {
   const err = new Error('Not Found');
   err.status = 404;
+  console.log('404: Route Not Found');
   next(err);
 });
 app.use((err, req, res, next) => {
-  res.redirect(url.format({
-    pathname: '/error',
-    query: {
-      'message': err.message,
-      'status': err.status,
-      'stack': err.stack
-    }
-  }));
+  res.locals.error = err;
+  res.render('error');
 });
 
 // ======= dev server ===============
